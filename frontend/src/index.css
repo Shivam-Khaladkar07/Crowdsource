@@ -1,0 +1,49 @@
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --primary: 222 47% 16%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 187 62% 32%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 214 20% 94%;
+    --muted-foreground: 215 16% 40%;
+    --accent: 210 25% 93%;
+    --accent-foreground: 222 47% 16%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 55% 32%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 11%;
+    --ai: 262 42% 42%;
+    --ai-foreground: 0 0% 100%;
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 222 47% 16%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Segoe UI", "Noto Sans", system-ui, sans-serif;
+  }
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.65rem;
+  z-index: 0;
+}
